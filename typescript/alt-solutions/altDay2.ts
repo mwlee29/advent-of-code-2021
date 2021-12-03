@@ -44,6 +44,6 @@ export function altPart2(input: string) {
 
 if (require.main === module) {
   const input = fs.readFileSync("./day2.txt", "utf-8");
-  console.log(`Day 1, Part 1: ${altPart1(input)}`)
+  console.log(`Day 2, Part 1: ${altPart1(input)}`)
   console.log(`Day 2, Part 2: ${altPart2(input)}`)
 }
