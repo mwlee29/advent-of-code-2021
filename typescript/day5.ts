@@ -112,12 +112,8 @@ export function part1(input: string) {
 }
 
 export function part2(input: string) {
-  let pointA: Point = { x: 1, y: 1 };
-  let pointB: Point = { x: 1, y: 1 };
-
-  let arr = [pointA, pointB];
-  let newArr = _.groupBy(arr, (p) => [p.x, p.y]);
-  return newArr;
+  const lines = parseInput(input);
+  return calcIntersections(lines);
 }
 
 if (require.main === module) {
